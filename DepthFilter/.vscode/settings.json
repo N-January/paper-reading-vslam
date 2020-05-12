@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.ipp": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
+    },
+    "python.pythonPath": "/usr/bin/python"
+}

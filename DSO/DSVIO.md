@@ -66,11 +66,11 @@ $$
 #### 1) Nonlinear Optimization
 对于每一帧关键帧定义状态向量：
 $$
-\boldsymbol{s}_{i}:=\left[\left(\boldsymbol{\xi}_{c a m_{i\_w}}^{D}\right)^{T}, \boldsymbol{v}_{i}^{T}, \boldsymbol{b}_{i}^{T}, a_{i}, b_{i}, d_{i}^{1}, d_{i}^{2}, \ldots, d_{i}^{m}\right]^{T} \tag{5} \label{e5}
+\boldsymbol{s}_{i}:=\left[\left(\boldsymbol{\xi}_{c a m_{i\_w}}^{D}\right)^{T}, \boldsymbol{v}_{i}^{T}, \boldsymbol{b}_{i}^{T}, a_{i}, b_{i}, d_{i}^{1}, d_{i}^{2}, \ldots, d_{i}^{m}\right]^{T} \tag{5}
 $$
 则完整的状态变量被定义为：
 $$
-\boldsymbol{s}=\left[\boldsymbol{c}^{T}, \boldsymbol{\xi}_{m_{-} d}^{T}, \boldsymbol{s}_{1}^{T}, \boldsymbol{s}_{2}^{T}, \ldots, \boldsymbol{s}_{n}^{T}\right]^{T} \tag{6} \label{e6}
+\boldsymbol{s}=\left[\boldsymbol{c}^{T}, \boldsymbol{\xi}_{m_{-} d}^{T}, \boldsymbol{s}_{1}^{T}, \boldsymbol{s}_{2}^{T}, \ldots, \boldsymbol{s}_{n}^{T}\right]^{T} \tag{6} 
 $$
 (变量的意义也比较常规，不赘述，详见论文)  
 
