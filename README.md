@@ -6,3 +6,4 @@
 - Direct Sparse Visual-Inertial Odometry using Dynamic Marginalization(ICRA2018)
 - Decoupled, Consistent Node Removal and Edge Sparsification for Graph-based SLAM
 - Depth Filter.
+- Line Feature.
