@@ -1,7 +1,7 @@
 # paper-reading-vslam
 - Direct Sparse Odometry(TPAMI 2017)
-  - DSO-Initial.
-  - DSO-Tracking.
+  - DSO-Initial
+  - DSO-Tracking
   
 - LDSO: Direct Sparse Odometry with Loop Closure(IROS 2018)
 
@@ -9,9 +9,9 @@
 
 - Decoupled, Consistent Node Removal and Edge Sparsification for Graph-based SLAM(IROS2016)
 
-- Depth Filter.
+- Depth Filter
 
-- Line Feature.
+- Line Feature
 
 - Match or No Match: Keypoint Filtering based on Matching Probability(CVPR2020)
 
@@ -34,3 +34,5 @@
   本文的实际效果，速度毋庸置疑的提升，只是精度方面会稍微差一些，本文的前端+ICE-BA的后端和完整的ICE-BA相比，在EuRoC上，一些case最多差一个点，关于差别作者给出的解释是，在一些黑暗、快速运动的场景引入了跟踪噪声。
 
   笔者说：本文结合cuda特性优化了特征提取算法，这个思路比较常规，只是圈内在这个层面的研究已经很少了，毕竟API快乐(皮一下)。关于帧率提升意义的思考，对于实时的定义，我想这个取决于应用场景，对于低速自主机器人等来说，可能10Hz、30Hz级别已经够用，另外降帧率也是一种节约算力的方法，简单粗暴效果爆炸；但是对于一些人机交互的行为，比如AR/VR，或许还是希望帧率稍高一些，定位信息更新的频率影响交互体验，当然也有基于IMU预估位姿的方法，只是如果能够准确计算那高帧率也是挺好的，虽然说成本挺高。对于作者的思路再提炼一下，一个共性的思路是，结合业务的特化优化效果显著，即结合业务将多个环节在一个环节进行实现是很有意义的。另外想重点说一下效果，竟然会比CPU方法差一个点，作者并没有给出更细致的解释，但是是值得深究的，笔者认为可能的原因是，在作者的实现中，比如非最大值抑制环节为了并行还是有一些近似操作，以及作者实现的前端仅基于LK光流，还不能算得上完整的前端，所以精度可能会差一些，毕竟完整SLAM框架里的各种trick都是很有意义的，当然可能本文重点强调的特征点分布更加均匀进而实现鲁棒性提升的点可能没有体现出来，毕竟没有鲁棒就没有精度。最后，这也算是一篇吹ICE-BA的文章。
+
+- PL-VINS: Real-Time Monocular Visual-Inertial SLAM with Point and Line Features(ICRA2020)
